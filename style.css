@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1440px;
+    /* width: 80%; */
+    margin: 0 auto;
+}
+.banner-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(229, 84, 115, 0.10);
+}
+.banner-container .banner-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left:100px ;
+    gap: 20px;
+    justify-content: center;
+}
+.banner-container .banner-text>p{
+    /* width: 60%; */
+    color: rgba(39, 39, 39, 0.60);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.banner-container .banner-text>h1{
+    /* width: 60%; */
+    color: #272727;
+    font-family: Lato;
+    font-size:4rem;
+    font-weight: 800;
+}
+.banner-container>.banner-image>{
+    width: 50%;
+  
+}
+
+.banner-container .banner-image>img{
+    width: 100%;
+    /* padding-left: 50px; */
+}
+.btn-primary{
+    border-radius: 8px;
+    background: #E55473;
+    color: #FFF;
+    padding: 10px;
+    border: none;
+}
+/* our-featured-flowers */
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:100px ;
+    padding-bottom: 100px;
+}
+.description>p,.text{
+    color: rgba(39, 39, 39, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+
+}
+.images{
+    width: 33.33%;
+    height: 100%;
+}
+.image1>img{
+    width:75%;
+    height: 60%;
+}
+.image2>img{
+    width: 100%;
+    height: 100%;
+}
+.image3>img{
+    width: 67%;
+    height: 100%;
+}
+.image1{
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(167, 33, 98, 0.15);
+    padding: 20px 20px 0 20px;
+}
+.image2{
+    border-radius: 300px 300px 0px 0px;
+background: rgba(5, 151, 160, 0.15);
+}
+.image3{
+    border-radius: 300px 300px 0px 0px;
+background: rgba(71, 125, 17, 0.15);
+
+}
+.title-img>a {
+    color: black;
+    font-size: 2rem;
+
+}
+.title-img{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.delivery-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+.hot-deal-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+background: rgba(229, 84, 115, 0.05);
+padding: 50px;
+}
+.off{
+    color: #E55473;
+}
+.seal-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.instagram{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.instagram-images{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    /* transition: 2s; */
+}
+.get-latest{
+    min-height: 290px;
+    background-image: url(/flower-asset/flower-1-\(9\).png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 100px;
+   
+}
+.input{
+    border-radius: 8px;
+    background: #FFF; 
+    padding: 15px;
+    padding-right: 150px;
+    border: none;
+}
+.footer-container{
+    min-height: 300px;
+    background: #111010;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.footer-container>p{
+    color: #FFF;
+
+}
+.white{
+    color: #FFF;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    body{
+        width: 100% auto;
+        margin: 0 auto;
+    
+    }
+    .banner-container ,.image-container, .hot-deal-container{
+        flex-direction: column;
+    }
+    .banner-container .banner-text{
+        padding-left: 20px;
+        width: 90%;
+    }
+    .banner-container .banner-text>h1{
+        font-size:2rem;
+        font-weight: 600;
+        padding-top: 20px;
+    }
+    .banner-container .banner-image>img{
+        width: 80%;
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+    .image-container{
+        justify-content:space-evenly;
+    }
+    .title-img{
+        padding: 10px;
+    }
+    .title-img>a {
+        color: black;
+        font-size: 1rem;}
+    
+     .image-container>.images{
+            width: 100%;
+            height: 100%;
+        }
+        .delivery-container{
+            padding:50px  0;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+        }
+        .instagram-images{
+            flex-direction: column;
+            gap: 10px;
+        }
+        .get-latest{
+            gap: 0;
+            min-height: 150px;
+        }
+        .get-latest{
+            padding-top: 10px;
+        }
+        .input{
+            padding: 5px;
+        }
+        .get{
+            font-size: 25px;
+            padding: 5px;
+        }
+        .sub{
+            padding: 5px;
+            font-size: 10px;
+        }
+        .white{
+            padding: 5px;
+
+        }
+        .footer-container{
+            gap: 5px;
+        }
+        .size{
+            font-size: 8px;
+        }
+    
+}
+@media screen  and (min-width: 576px) and (max-width:960px) {
+    body{
+        width: 100% auto;
+        margin: 0 auto;
+    }
+        .banner-container,.image-container ,.hot-deal-container{
+        flex-direction: column;
+        
+    }
+    .banner-container .banner-image>img{
+        width: 80%;
+        padding-top: 40px;
+        padding-left: 40px;}
+        .image-container{
+            justify-content:space-evenly;
+            gap: 20px;
+        }
+        .title-img>a {
+            color: black;
+            font-size: 2rem;}
+            .image-container>.images{
+                width: 100%;
+                height: 100%;
+            }
+        .banner-container .banner-text{
+            padding: 20px;
+            width: 90%;
+        }
+        .hot-deal-container{
+            gap: 50px;
+            
+        }
+        .instagram-images{
+            flex-direction: column;
+            gap: 10px;
+        }
+        .get-latest{
+            gap: 0;
+        }
+        .get-latest{
+            padding-top: 30px;
+        }
+        .input{
+            padding: 2px;
+        }
+        .get{
+            /* font-size: 20px; */
+        }
+        .sub{
+            padding: 5px;
+            /* font-size: 10px; */
+        }
+}
